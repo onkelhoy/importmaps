@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ImportMap Test</title>
+  <script type="importmap">
+    {
+      "imports": {
+        "hello": "./node_modules/hello/main.js",
+        "world": "./node_modules/world/main.js"
+      }
+    }
+  </script>
+  <script type="module" src="main.js" defer></script>
+
+  <style>
+    body {
+      display: flex;
+    }
+    button {
+      margin: auto;
+      padding: 1rem 2rem;
+    }
+  </style>
+</head>
+<body>
+  <button>TEST</button>
+</body>
+</html>
