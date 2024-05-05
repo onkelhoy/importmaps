@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ImportMap Test</title>
+  <script type="importmap">
+    {
+      "imports": {
+        "hello": "sources/hello/main.js",
+        "world": "sources/world/main.js"
+      }
+    }
+  </script>
+  <script type="module" src="main.js" defer></script>
+
+  <style>
+    body {
+      display: flex;
+      background-image: url(public/images/arrow.png);
+    }
+    div {
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+    }
+    button {
+      padding: 1rem 2rem;
+    }
+
+    img {
+      background-color: cornflowerblue;
+    }
+  </style>
+</head>
+<body>
+
+  <div>
+    <button>TEST</button>
+    <img src="public/images/arrow.png" alt="arrow" />
+  </div>
+
+</body>
+</html>
